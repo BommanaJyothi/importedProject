@@ -40,7 +40,7 @@
 	<artifactId>tomcat7-maven-plugin</artifactId>
 	<version>2.2</version>
 	<configuration>
-		<url>https://localhost:8070/manager/text</url>
+		<url>http://localhost:8070/manager/text</url>
 		<server>TomcatServer</server>
 		<path>/MyWebapp</path>
 	</configuration>
