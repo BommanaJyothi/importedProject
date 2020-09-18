@@ -43,7 +43,10 @@
 		<url>http://localhost:8070/manager/text</url>
 		<server>TomcatServer</server>
 		<path>/MyWebapp</path>
+		<username>tomcat</username>
+		<password>tomcat</password>
 	</configuration>
+	
 </plugin>
 
             <plugin>
