@@ -2,8 +2,12 @@
  
 pipeline{
     agent any
+  //   agent { label 'docker && git && rbenv' }
+    options {
+      skipDefaultCheckout true
+   }
     stages{
-        /*stage('Git Checkout'){
+        stage('Git Checkout'){
             steps{
                 gitcheckout([
                     $class: 'GitSCM',
@@ -11,7 +15,7 @@ pipeline{
                     url: 'https://github.com/BommanaJyothi/importedProject.git'
                 ])
             }
-        }*/
+        }
         stage('test'){
             steps{
                 script{
