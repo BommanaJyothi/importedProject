@@ -3,7 +3,7 @@
 pipeline{
     agent any
     stages{
-        stage('Git Checkout'){
+        /*stage('Git Checkout'){
             steps{
                 gitcheckout([
                     $class: 'GitSCM',
@@ -11,7 +11,7 @@ pipeline{
                     url: 'https://github.com/BommanaJyothi/importedProject.git'
                 ])
             }
-        }
+        }*/
         stage('test'){
             steps{
                 script{
